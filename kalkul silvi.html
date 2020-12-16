@@ -1,0 +1,86 @@
+<html>
+<title>Kalkulator Modern</title>
+<SCRIPT LANGUAGE="JavaScript">
+function tambah()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a+b
+form.hasil.value = c
+}
+function kurang()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a-b
+form.hasil.value=c
+}
+function kali()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a*b
+form.hasil.value=c
+}
+
+function bagi()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a/b
+form.hasil.value = c
+}
+
+function pangkat()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=Math.pow(a, b)
+form.hasil.value = c
+}
+
+function kosong()
+{
+form.a.focus()
+form.a.value=""
+form.b.value=""
+form.hasil.value=""
+
+}
+
+</SCRIPT>
+<body onload=kosong()>
+<CENTER>
+<font size="5">Kalkulator Modern</font>
+<hr size="5" color="black">
+<FORM name="form">
+<pre>
+Angka 1 <input type="text" name="a">
+Angka 2 <input type="text" name="b">
+Hasil <input type "text" name="hasil" disabled="true">
+</pre>
+<input type="button" value=" + " onClick="tambah()">
+<input type="button" value=" - " onClick="kurang()">
+<input type="button" value=" x " onClick="kali()">
+<input type="button" value=" / " onClick="bagi()">
+<input type="button" value=" ^ " onClick="pangkat()"><br>
+<input type="button" value=" sin " onClick="sin 1()">
+<input type="button" value=" cos " onClick="cos-1()">
+<input type="button" value=" tan " onClick="tan-1()">
+<input type="button" value=" In " onClick="ex()">
+<input type="button" value=" log " onClick="10x()">
+<input type="button" value=" hyp " onClick="hyp-1()">
+<input type="button" value=" SHIFT " onClick="....()">
+<input type="button" value=" DRG " onClick="DRG()">
+<input type="button" value=" FSE " onClick="TAB()">
+<input type="button" value=" MR " onClick="RCL()">
+<input type="button" value=" MS " onClick="STO()">
+<input type="button" value=" M+ " onClick="M-()">
+<input type="button" value="Clear " onClick="kosong()">
+</br>
+<hr size="2" color="black">
+Direct By: SILVI ARMELIA TRISTANTI<br>
+</FORM>
+</CENTER>
+</body>
+</html>
